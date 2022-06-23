@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PythagoreanTriplet {
-
-    private List<PythagoreanTriplet> list;
     private int a;
     private int b;
     private int c;
