@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PythagoreanTripletTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-06-22T13:29:44" hostname="LAPTOP-76M080U7" time="4.076">
+<testsuite name="PythagoreanTripletTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-06-23T01:56:50" hostname="LAPTOP-76M080U7" time="4.062">
   <properties/>
-  <testcase name="tripletsWhoseSumIs1000" classname="PythagoreanTripletTest" time="0.015"/>
-  <testcase name="tripletsWhoseSumIs1001" classname="PythagoreanTripletTest" time="0.007"/>
+  <testcase name="tripletsWhoseSumIs1000" classname="PythagoreanTripletTest" time="0.026"/>
+  <testcase name="tripletsWhoseSumIs1001" classname="PythagoreanTripletTest" time="0.006"/>
   <testcase name="tripletsWhoseSumIs108" classname="PythagoreanTripletTest" time="0.0"/>
-  <testcase name="tripletsWhoseSumIs840" classname="PythagoreanTripletTest" time="0.004"/>
+  <testcase name="tripletsWhoseSumIs840" classname="PythagoreanTripletTest" time="0.005"/>
   <testcase name="tripletsWhoseSumIs12" classname="PythagoreanTripletTest" time="0.0"/>
-  <testcase name="tripletsWhoseSumIs90" classname="PythagoreanTripletTest" time="0.0"/>
-  <testcase name="tripletsWhoseSumIs30000" classname="PythagoreanTripletTest" time="4.05"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="tripletsWhoseSumIs90" classname="PythagoreanTripletTest" time="0.001"/>
+  <testcase name="tripletsWhoseSumIs30000" classname="PythagoreanTripletTest" time="4.023"/>
+  <system-out><![CDATA[Actual: [[a : 200 b : 375 c : 425]] Expected: [[a : 200 b : 375 c : 425]]
+Actual: [[a : 27 b : 36 c : 45]] Expected: [[a : 27 b : 36 c : 45]]
+Actual: [[a : 40 b : 399 c : 401], [a : 56 b : 390 c : 394], [a : 105 b : 360 c : 375], [a : 120 b : 350 c : 370], [a : 140 b : 336 c : 364], [a : 168 b : 315 c : 357], [a : 210 b : 280 c : 350], [a : 240 b : 252 c : 348]] Expected: [[a : 40 b : 399 c : 401], [a : 56 b : 390 c : 394], [a : 105 b : 360 c : 375], [a : 120 b : 350 c : 370], [a : 140 b : 336 c : 364], [a : 168 b : 315 c : 357], [a : 210 b : 280 c : 350], [a : 240 b : 252 c : 348]]
+Actual: [[a : 3 b : 4 c : 5]] Expected: [[a : 3 b : 4 c : 5]]
+Actual: [[a : 9 b : 40 c : 41], [a : 15 b : 36 c : 39]] Expected: [[a : 9 b : 40 c : 41], [a : 15 b : 36 c : 39]]
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

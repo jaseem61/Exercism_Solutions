@@ -14,19 +14,44 @@ public class PythagoreanTriplet {
         this.c = c;
     }
 
-    private PythagoreanTriplet()
-    {
-
+    public int getA() {
+        return a;
     }
 
-    public static PythagoreanTriplet makeTripletsList()
-    {
-        PythagoreanTriplet Runner =new PythagoreanTriplet();
-        Runner.list=new ArrayList<PythagoreanTriplet>();
-        return Runner;
+    public int getB() {
+        return b;
     }
 
-    public PythagoreanTriplet withFactorsLessThanOrEqualTo(int factorLimit)
+    public int getC() {
+        return c;
+    }
+
+    public static PythagoreanTripletList makeTripletsList()
+    {
+        PythagoreanTripletList triplets =new PythagoreanTripletList();
+        return triplets;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        PythagoreanTriplet pt = (PythagoreanTriplet) obj;
+        return (pt.a==this.a&&pt.b==this.b&&pt.c==this.c);
+    }
+
+    @Override
+    public String toString() {
+        return "[a : "+this.a+" b : "+this.b+" c : "+this.c+"]";
+    }
+}
+
+class PythagoreanTripletList{
+    private List<PythagoreanTriplet> list;
+    PythagoreanTripletList(){
+        this.list=new ArrayList<PythagoreanTriplet>();
+    }
+
+
+    public PythagoreanTripletList withFactorsLessThanOrEqualTo(int factorLimit)
     {
         for(int i=1;i<=factorLimit;i++)
         {
@@ -43,13 +68,13 @@ public class PythagoreanTriplet {
         return this;
     }
 
-    public  PythagoreanTriplet thatSumTo(int sumRequired)
+    public  PythagoreanTripletList thatSumTo(int sumRequired)
     {
         int iterator=0;
         while(iterator<this.list.size())
         {
             PythagoreanTriplet triplet= this.list.get(iterator);
-            if(triplet.a+triplet.b+triplet.c!=sumRequired)
+            if(triplet.getA()+triplet.getB()+triplet.getC()!=sumRequired)
             {
                 this.list.remove(iterator);
             }
@@ -66,16 +91,4 @@ public class PythagoreanTriplet {
         return this.list;
     }
 
-
-
-    @Override
-    public boolean equals(Object obj) {
-        PythagoreanTriplet pt = (PythagoreanTriplet) obj;
-        return (pt.a==this.a&&pt.b==this.b&&pt.c==this.c);
-    }
-
-    @Override
-    public String toString() {
-        return "[a : "+this.a+" b : "+this.b+" c : "+this.c+"]";
-    }
 }
